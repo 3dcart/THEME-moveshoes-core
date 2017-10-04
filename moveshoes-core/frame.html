@@ -71,14 +71,13 @@
                     </a>
                 </div>
 
-                <div class="col-sm-5 search-form-col">
+                <div class="col-sm-3 search-form-col">
                 </div>
-                <div class="col-sm-3 hidden-xs clearfix cart-account">
+                <div class="col-sm-5 hidden-xs clearfix cart-account">
+                  
                     <!--START: shopping_cart-->
                     <div class="minicart">
-                    	<a href="/myaccount.asp" class="minicart-inner clearfix">
-                        	[frame_myaccount-link-text]
-                        </a>
+                    	
                         <a href="view_cart.asp" class="minicart-inner clearfix">
                             <span class="cart-details">
                                 <span class="cart-title">[frame_shopping-cart-text]</span>
@@ -88,6 +87,9 @@
                         </a>
                     </div>
                     <!--END: shopping_cart-->
+                  <a href="/myaccount.asp" class="minicart-inner my-cart clearfix">
+                    [frame_myaccount-link-text]
+                  </a>
 					<div id="floating-cart" class="floating-cart">
                         <a href="view_cart.asp" class="minicart-inner clearfix">
                             <span class="icon-basket cart-icon"></span>
@@ -162,7 +164,9 @@
 
 
     <!--START: global_footer-->
-    <section class="global-footer">[GLOBAL_FOOTER]</section>
+    <section class="global-footer">
+      <div class="container">[GLOBAL_FOOTER]</div>
+    </section>
     <!--END: global_footer-->
     <!-- FOOTER -->
     <div class="footer-border"></div>

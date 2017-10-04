@@ -29,7 +29,13 @@ h1 {
 section {
 	color: #fff;
 }  
-
+.navbar-nav > li.dropdown > a:after {
+    content: "\f107";
+    font-family: "fontello";
+    font-size: 18px;
+    line-height: 0;
+    margin-left: 5px;
+}
 .sticky.is-sticky {
   position: fixed;
   left: 0;
@@ -294,6 +300,7 @@ section {
 	display: inline-block;
 	float: right;
 	margin: 10px 0 0;
+	clear:both;
 }
 .search-form {
     position: relative;
@@ -540,7 +547,7 @@ ul.extrapages li a {
 	position: absolute;
     top: 0;
     right: 0;
-    width: 68px;
+    min-width: 68px;
     height: 93%;
     text-align: center;
     font-size: 16px;
@@ -584,6 +591,10 @@ ul.extrapages li a {
 
 .footer-social ul {
     margin: 0;
+	margin-bottom:25px;
+}
+.social-icons li a span:before{
+	line-height:35px;
 }
 ul.payment-icons {
     text-align: right;
@@ -674,6 +685,16 @@ span.freeshipping {
 }
 .product-item .status {
     font-size: 12px;
+	text-align:center;
+}
+.my-cart{
+	font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0;
+    display: inline-block;
+	float:right;
+	margin-right:25px;
 }
 .product-item .price {
     font-size: 16px;
@@ -795,8 +816,6 @@ span.freeshipping {
 	}
 	.cart-account {
 		margin-top: 0px;
-		max-width: 245px;
-		width: 100%;
 		float: right;
 	}
 	
@@ -808,11 +827,16 @@ span.freeshipping {
     }
     .navbar-nav > li.dropdown > a:after {
         float: right;
+		display:none;
     }
+	.navbar-nav>li {
+		display:block;
+		text-align:center;
+	}
 	.minicart {
-		text-align: left;
+		/*text-align: left;
 		max-width: 245px;
-		width: 100%;
+		width: 100%;*/
 	}
     .mailist-box {
         float: none;
@@ -839,6 +863,12 @@ span.freeshipping {
     .logo img {
         position: static;
     }
+	.mailinglist-submit {
+		height: auto;
+	}
+	.social-icons li a span:before {
+		line-height: 25px;
+	}
     .searchBox {
         padding: 20px 0 0;
     }
@@ -855,7 +885,7 @@ span.freeshipping {
         margin: -12px 0 0;
     }
     .mailinglist-input.form-control {
-        max-width: 200px;
+        max-width:710px;
     }
     .social-icons li a {
         width: 24px;
