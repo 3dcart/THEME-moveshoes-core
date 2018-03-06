@@ -1153,3 +1153,8 @@ a.update-qty {
 .star-rating {
 	width: auto;
 }
+.qtyTable-btn,
+#qtyTable th,
+#qtyTable td {
+    color: #fff;
+}
