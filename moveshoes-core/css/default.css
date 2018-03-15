@@ -1158,3 +1158,6 @@ a.update-qty {
 #qtyTable td {
     color: #fff;
 }
+ul.sidebarUL > li > a {
+	color: #fff;
+}
