@@ -992,6 +992,14 @@ span.freeshipping {
 
     .search-form-col {
         clear: both;
+		display:block;
+		width:100%;
+    }
+	.search-form-col .searchBox{
+		float: none;
+		width: 100%;
+		display: block;
+		max-width: 100%;
     }
 
     .flex-direction-nav a:before {

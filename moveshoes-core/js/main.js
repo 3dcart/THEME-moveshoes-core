@@ -91,6 +91,7 @@ function moveMenu() {
     if (respWidth < 767) {
         jQuery('#menulinks').appendTo('#mobile-menulinks');
         jQuery('#categories').appendTo('#mobile-categories');
+		jQuery('#searchBox').appendTo('.search-form-col');
     }
     else {
         jQuery('#menulinks').appendTo('#menulinks-outer');
