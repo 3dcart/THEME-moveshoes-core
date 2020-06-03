@@ -783,12 +783,23 @@ span.freeshipping {
 }
 
 .product-item .action {
-    text-align: center;
+	text-align: center;
+	margin-top: 15px;
 }
-
 .product-item .status {
     font-size: 12px;
-    text-align: center;
+	text-align: center;
+}
+.product-items.productList .product-item .product-content,
+.product-items.productList .product-item .name,
+.product-items.productList .product-item .price, 
+.product-items.productList .product-item .status, 
+.product-items.productList .product-item .reviews,
+.product-items.productList .product-item .action{
+    text-align: left;
+}
+.product-items.productList .product-item .img a {
+    position: initial;
 }
 
 .product-item .price {
