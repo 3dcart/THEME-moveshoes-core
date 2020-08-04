@@ -5,6 +5,13 @@ jQuery(document).ready(function(e) {
 });
 
 function update_flyoutcart() {
+	if (window["_3d_cart"] != undefined) {
+        if (_3d_cart.oid == 0)
+            return;
+        jQuery('#floating-cart .minicart-items').text(_3d_cart.itemsum);
+        jQuery('#floating-cart').fadeIn(300);
+        return;
+    }
     jQuery.ajax({
         url: '/frontapi.asp',
         dataType: 'json',
