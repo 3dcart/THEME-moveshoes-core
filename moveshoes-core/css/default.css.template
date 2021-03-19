@@ -17,12 +17,28 @@ body {
   height: 100%;
   flex-direction: column;
 }
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 .page-content {
   flex: 1 0 auto;
 }
 footer {
   flex-shrink: 0;
 }
+.footer-right p {color: #b0b0b0 !important;}
 #home .flex-direction-nav a:before {
     color: #fff;
 }
@@ -838,7 +854,7 @@ span.freeshipping {
     font-weight: 500;
     text-align: center;
     margin: 15px 0;
-    color: #626262;
+    color: #b0b0b0;
 }
 
 .product-item .img {
@@ -898,7 +914,7 @@ span.freeshipping {
     font-size: 24px;
 }
 
-.products-section h2 {
+.products-section h2,.products-section h1 {
     font-size: 18px;
     line-height: 1;
     font-weight: 500;

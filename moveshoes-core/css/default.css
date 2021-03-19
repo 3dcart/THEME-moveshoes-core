@@ -14,12 +14,28 @@ body {
 	flex-direction: column;
 	min-height: 100vh;
 }
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
 .page-content {
 	flex: 1 0 auto;
 }
 footer {
 	flex-shrink: 0;
 }
+.footer-right p {color: #b0b0b0 !important;}
 #home .flex-direction-nav a:before {
     color: #fff;
 }
@@ -157,7 +173,7 @@ section {
     font-weight: 600;
     text-transform: uppercase;
     background: #1fc0a0 !important;
-    color: #fff !important;
+    color: #000 !important;
     line-height: 30px !important;
 }
 
@@ -345,7 +361,7 @@ section {
 }
 
 .top-nav ul li a {
-    color: #7c7c7c;
+    color: #ADADAD;
     font-size: 12px;
     text-transform: uppercase;
     padding: 0 15px;
@@ -648,7 +664,7 @@ ul.extrapages li a {
 
 .mailinglist-submit {
     background-color: transparent;
-    color: #fff !important;
+    color: #000 !important;
     border-color: transparent !important;
     float: right;
     position: absolute;
@@ -826,7 +842,7 @@ span.freeshipping {
     font-weight: 500;
     text-align: center;
     margin: 15px 0;
-    color: #626262;
+    color: #b0b0b0;
 }
 
 .product-item .img {
@@ -886,7 +902,7 @@ span.freeshipping {
     font-size: 24px;
 }
 
-.products-section h2 {
+.products-section h2,.products-section h1 {
     font-size: 18px;
     line-height: 1;
     font-weight: 500;
